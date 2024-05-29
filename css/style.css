@@ -1,0 +1,66 @@
+/********** Template CSS **********/
+
+:root {
+  --primary: #232b36;
+  --secondary: #daac45;
+  /* --tertiary: #6d6f71; */
+  --tertiary: #25282a;
+  --button-color: #232b36;
+  --button-color-hover: #7e5b51;
+  --light: #917e69;
+  --dark: #3a262d;
+  --solid: #8c796e;
+  --white: #fff;
+  --grey: #999;
+  --black: #000;
+  --grey-1: #e7e7e7;
+}
+
+/* Roboto Black */
+@font-face {
+  font-family: "Gazpacho Black";
+  src: url("./fonts/GAZPACHO BLACK.TTF") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+  font-style: normal;
+}
+
+/* Roboto Black Italic */
+@font-face {
+  font-family: "Gazpacho Medium";
+  src: url("./fonts/GAZPACHO MEDIUM.TTF") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+}
+
+/* Roboto Bold */
+@font-face {
+  font-family: "Gazpacho Regular";
+  src: url("./fonts/GAZPACHO REGULAR.TTF") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+html {
+  font-family: "Poppins" !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 95px;
+  z-index: 99;
+}
+
+/*** Spinner Start ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}

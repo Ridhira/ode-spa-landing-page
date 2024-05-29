@@ -1,0 +1,104 @@
+.navbar {
+  z-index: 10000;
+  height: 13vh;
+}
+
+.navbar-heading {
+  padding: 20px 40px;
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar .navbar-brand img {
+  width: 70%;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #303030;
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: "Gazpacho Regular";
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--secondary);
+}
+
+.navbar.sticky-top {
+  top: -100px;
+  transition: 0.5s;
+}
+
+@media (max-width: 1300px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+    color: #daccc6;
+    margin-left: 2rem;
+  }
+
+  .navigation-menu {
+    background-color: #303030;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #303030;
+    min-height: 5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar .navbar-brand img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,144 @@
+.wellness_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.wellness_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #303030;
+}
+
+.wellness_heading h1 {
+  font-family: "Gazpacho Black" !important;
+  font-size: 3rem !important;
+  text-transform: capitalize !important;
+  color: #303030;
+}
+
+.wellness_heading h4 {
+  font-family: "Gazpacho Regular";
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #303030;
+}
+
+.wellness {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 40vh 40vh;
+  gap: 2rem;
+}
+
+.wellness_item {
+  width: 100%;
+}
+
+.wellness_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wellness_title h4 {
+  font-family: "Gazpacho Black";
+  font-size: 1.6rem;
+  color: #303030;
+}
+
+.wellness_title p {
+  font-family: "Gazpacho Medium";
+  font-size: 1rem;
+  text-align: center;
+  color: #303030;
+}
+
+.wellness_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wellness_item_reverse {
+  flex-direction: row-reverse;
+}
+
+.wellness_item img {
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .wellness {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 30vh;
+    gap: 2rem;
+  }
+
+  .wellness_heading {
+    margin-bottom: 2rem;
+  }
+
+  .wellness_heading h1 {
+    font-size: 2.6rem !important;
+  }
+
+  .wellness_heading h4 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wellness_heading h1 {
+    font-size: 2rem !important;
+  }
+
+  .wellness_heading h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .wellness {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 30vh;
+    gap: 1rem;
+  }
+
+  .wellness_heading h1 {
+    font-size: 1.6rem !important;
+    width: 80%;
+    text-align: center;
+  }
+
+  .wellness_heading h4 {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .wellness_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wellness_title h4 {
+    font-size: 1.2rem;
+  }
+
+  .wellness_title p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
