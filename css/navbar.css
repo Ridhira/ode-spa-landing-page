@@ -28,6 +28,8 @@
   cursor: pointer;
   text-decoration: none;
   padding: 0 30px;
+  position: relative;
+  z-index: 2560000000;
 }
 
 .navbar-nav {
@@ -100,5 +102,9 @@
 @media (max-width: 568px) {
   .navbar .navbar-brand img {
     width: 60%;
+  }
+
+  .navbar .navbar-brand {
+    width: 80%;
   }
 }
